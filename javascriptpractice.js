@@ -29,3 +29,13 @@ function getGrade(score) {
     }
     return grade;
 }
+
+// Day 1 Let and Const
+function main() {
+let r = readLine();
+const PI = Math.PI;
+
+// Print the area of the circle:
+console.log(PI*r*r);
+// Print the perimeter of the circle:
+console.log(PI*2*r);

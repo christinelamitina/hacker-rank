@@ -39,3 +39,20 @@ const PI = Math.PI;
 console.log(PI*r*r);
 // Print the perimeter of the circle:
 console.log(PI*2*r);
+
+
+// Day 2 Switch Statements
+function getLetter(s) {
+    let letter;
+    switch (true) {
+        case 'aeiou'.includes(s[0]):
+            return 'A';
+        case 'bcdfg'.includes(s[0]):
+            return 'B';
+        case 'hjklm'.includes(s[0]):
+            return 'C';
+        case 'npqrstvwxyz'.includes(s[0]):
+            return 'D';
+        default: return undefined;
+    }
+}

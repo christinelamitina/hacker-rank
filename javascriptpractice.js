@@ -56,3 +56,5 @@ function getLetter(s) {
         default: return undefined;
     }
 }
+
+// Day 3

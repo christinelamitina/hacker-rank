@@ -31,7 +31,7 @@ function getGrade(score) {
 }
 
 // Day 1 Let and Const
-function main() {
+function main () {
 let r = readLine();
 const PI = Math.PI;
 
@@ -39,7 +39,7 @@ const PI = Math.PI;
 console.log(PI*r*r);
 // Print the perimeter of the circle:
 console.log(PI*2*r);
-
+}
 
 // Day 2 Switch Statements
 function getLetter(s) {

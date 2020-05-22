@@ -72,7 +72,7 @@ function validPass(password){
 
 // Santa needs you to write two functions. Both of the functions accept a sequence of objects. 
 // The first one returns a sequence containing only the names of the nice people, and the other 
-// returns a sequence containing only the names of the naughty people. 
+// returns a sequence containing only the names of the naughty people. Return empty string if null.
 
   function getName(person) {
     return person.name;
@@ -93,3 +93,4 @@ function validPass(password){
   function getNaughtyNames(people){
     return people.filter(wasNaughty).map(getName);
   }
+

@@ -69,3 +69,27 @@ function validPass(password){
     
     return (str.length % 2 ? str + '_' : str).match(/../g);
   }
+
+// Santa needs you to write two functions. Both of the functions accept a sequence of objects. 
+// The first one returns a sequence containing only the names of the nice people, and the other 
+// returns a sequence containing only the names of the naughty people. 
+
+  function getName(person) {
+    return person.name;
+  }
+  
+  function wasNice(person) {
+    return person.wasNice;
+  }
+  
+  function wasNaughty(person) {
+    return !wasNice(person);
+  }
+  
+  function getNiceNames(people){
+    return people.filter(wasNice).map(getName);
+  }
+  
+  function getNaughtyNames(people){
+    return people.filter(wasNaughty).map(getName);
+  }

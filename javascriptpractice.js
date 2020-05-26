@@ -67,3 +67,31 @@ function getSecondLargest(nums) {
     return nums.sort((a, b) => {return b - a;}).filter(el => {return nums[0] !== el})[0];
 }
 
+// DAY 3
+//  * Complete the isPositive function.
+//  * If 'a' is positive, return "YES".
+//  * If 'a' is 0, throw an Error with the message "Zero Error"
+//  * If 'a' is negative, throw an Error with the message "Negative Error"
+//  */
+function isPositive(a) {
+    if(a === 0){
+        return "Zero Error"
+    }
+    if(a < 0){
+        return "Negative Error"
+    }
+    else {
+        return "YES"
+    }
+}
+
+// Try, Catch & Finally
+function reverseString(s) {
+    try {
+        s = s.split('').reverse().join('');
+    } catch(e) {
+        console.log(e.message);
+    } finally {
+        console.log(s);
+    }
+}

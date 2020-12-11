@@ -121,3 +121,23 @@ function Rectangle(a, b) {
     this.perimeter = 2 * (a+b);
     this.area = a * b;
 }
+
+
+/** Day 3 :  Arrays
+*   Return the second largest number in the array.
+*   @param {Number[]} nums - An array of numbers.
+*   @return {Number} The second largest number in the array.
+**/
+function getSecondLargest(nums) {
+    let largestNum = Math.max(...nums);
+    let filteredNums = [];
+    let secondLargest;
+
+    for(let i = 0; i < nums.length; i++) {
+        if (nums[i] !== largestNum) {
+            filteredNums.push(nums[i]);
+        }
+    }
+
+    return Math.max(...filteredNums);
+}
